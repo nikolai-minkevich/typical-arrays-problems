@@ -19,11 +19,10 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
   if (!array || array.length==0) return 0;
-  let avg = 0
   let sum = 0
   array.forEach(element => {
     sum+=element
   });
-  avg=sum/array.length
+  let avg=sum/array.length
   return avg;
 }
